@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=468, user-scalable=no ">
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>Buitenverblijven 3D product configurator</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+	</style>		
+</head>
+<body>
+
+
+<iframe id="adminIframe" src="iframe_admin.html" style="width:100vw; height: 80vh; border: 0; overflow: hidden;" border="0"></iframe> 
+<script>
+if(window.location.hash)
+{
+let URLhash =  window.location.hash.slice(1);
+document.getElementById('adminIframe').src = document.getElementById('adminIframe').src + '#' + URLhash;
+}
+</script>
+
+
+
+
+
+
+</body>
+</html>
