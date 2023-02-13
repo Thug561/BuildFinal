@@ -1,0 +1,13 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+ <filter name="Split in Connected Components">
+  <Param name="delete_source_mesh" tooltip="Deletes the source mesh after all the connected component meshes are generated." value="true" type="RichBool" description="Delete source mesh"/>
+ </filter>
+ <filter name="Delete Current Mesh"/>
+ <filter name="Flatten Visible Layers">
+  <Param name="MergeVisible" tooltip="If true, flatten only visible layers, otherwise, all layers are used." value="true" type="RichBool" description="Merge Only Visible Layers"/>
+  <Param name="DeleteLayer" tooltip="Delete all the layers used as source in flattening. &lt;br>If all layers are visible only a single layer will remain after the invocation of this filter." value="true" type="RichBool" description="Delete Layers "/>
+  <Param name="MergeVertices" tooltip="Merge the vertices that are duplicated among different layers. &#xa;&#xa;Very useful when the layers are spliced portions of a single big mesh." value="true" type="RichBool" description="Merge duplicate vertices"/>
+  <Param name="AlsoUnreferenced" tooltip="Do not discard unreferenced vertices from source layers&#xa;&#xa;Necessary for point-cloud layers." value="true" type="RichBool" description="Keep unreferenced vertices"/>
+ </filter>
+</FilterScript>
