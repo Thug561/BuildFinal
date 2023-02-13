@@ -1,0 +1,84 @@
+#topDiv, #logotype
+{
+display: none !important;
+}
+
+#iconZoomIn
+{
+top: calc(50vh - 48px - 4px) !important;
+}
+
+
+
+#iconZoomOut
+{
+top: calc(50vh + 4px);
+}
+
+#icon3D
+{
+top: 10px !important;
+}
+
+#icon2D
+{
+top: 58px !important;
+}
+
+
+
+#builderUI {
+  top: 0 !important;
+  height: 100vh !important;
+}
+
+@media screen and ( max-width: 468px )
+{
+#canvas2Ddiv
+{
+top: 0 !important;
+}
+
+#canvas2d
+{
+top:calc((100vh - 1200px - 85vw) / 2 - 76px);
+}
+
+
+#renderCanvas
+{
+top: 0 !important;
+}
+
+#builderUI {
+top: 85vw !important;
+height: calc(100vh - 85vw) !important;
+}
+
+#iconZoomIn
+{
+top: 10px !important;
+}
+
+#iconZoomOut
+{
+top: 62px !important;
+}
+
+#icon2D
+{
+top: 62px !important;
+}
+
+
+#iconFullScreen
+{
+top: calc(85vw - 42px - 20px) !important;
+}
+
+.xr-button-overlay
+{
+top: calc(85vw - 42px - 20px) !important;
+}
+
+}
